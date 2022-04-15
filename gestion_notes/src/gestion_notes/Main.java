@@ -17,6 +17,19 @@ public class Main {
 		e2.setNote(12);
 		e3.setNote(16);
 		
+		//Creation d'une Liste mesEtudiants
+		
+		ListEtudiants mesEtudiants = null;
+		
+		mesEtudiants.add(e2);
+		mesEtudiants.add(e3);
+		mesEtudiants.add(e1);
+		//affichage
+		
+		System.out.println(mesEtudiants);
+		
+		
+		
 		
 	}
 
