@@ -28,6 +28,7 @@ public class Main {
 		
 		System.out.println(mesEtudiants);
 		
+		mesEtudiants.filtrer(e.note > 13);
 		
 		
 		
