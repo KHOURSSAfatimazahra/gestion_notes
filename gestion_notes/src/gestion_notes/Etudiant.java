@@ -18,14 +18,14 @@ public class Etudiant implements Comparable<Etudiant> {
 		
 	}
 	
-	// la méthode toString
+	// redefinition de la méthode toString
 	
 	public String toString() {
 		return this.nom + ":" + this.note;
 		
 	}
 	
-	//  la méthode equals
+	// redefinition de la méthode equals
 	
 	@Override
 	public boolean equals(Object obj) {
@@ -43,6 +43,30 @@ public class Etudiant implements Comparable<Etudiant> {
 		if(this.note<=o.note) return 0;
 		if(this.note>=o.note) return 1;
 		return -1;
+	}
+	
+	//geters
+	public double getNote() {
+		return note;
+	}
+	
+	public String getNom() {
+		return nom;
+	}
+	public int getId() {
+		return id;
+	}
+	
+	// setters
+	
+	public void setId(int id) {
+		this.id = id;
+	}
+	public void setNom(String nom) {
+		this.nom = nom;
+	}
+	public void setNote(double note) {
+		this.note = note;
 	}
 	
 }
